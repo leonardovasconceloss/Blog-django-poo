@@ -47,51 +47,72 @@ Para executar o projeto, você precisará das seguintes versões e bibliotecas:
 ### 1. Clonar o Repositório
 Abra o terminal (ou Prompt de Comando no Windows) e execute:
 
-git clone git@github.com:SEU_USUARIO/NOME_DO_REPOSITORIO.git
+`git clone git@github.com:SEU_USUARIO/NOME_DO_REPOSITORIO.git`
 Substitua SEU_USUARIO e NOME_DO_REPOSITORIO pela URL correta do seu repositório no GitHub.
 
 ### 2. Navegar até o Diretório do Projeto
 
-cd NOME_DO_REPOSITORIO
+`cd NOME_DO_REPOSITORIO`
 
 ### 3. Criar e Ativar um Ambiente Virtual
 
-No Windows:
+**No Windows:**
 
 Criar o ambiente virtual:
-python -m venv env
+`python -m venv env`
 Ativar o ambiente virtual:
-env\Scripts\activate
+`env\Scripts\activate`
 
-No Linux:
+**No Linux:**
 Criar o ambiente virtual:
 
-python3 -m venv env
+`python3 -m venv env`
 Ativar o ambiente virtual:
 
-source env/bin/activate
+`source env/bin/activate`
 
 ### 4. Instalar as Dependências
 Com o ambiente virtual ativo, execute:
 
-pip install -r requirements.txt
+`pip install -r requirements.txt`
 
 ### 5. Configurar o Banco de Dados
 Execute as migrações para configurar o banco de dados:
 
-python manage.py migrate
+`python manage.py migrate`
 
 ### 6. Criar um Superusuário (Opcional, mas recomendado)
 Para acessar o painel administrativo do Django, crie um superusuário:
 
-python manage.py createsuperuser
+`python manage.py createsuperuser`
 Siga as instruções para definir um nome de usuário, e-mail e senha.
 
 ### 7. Rodar o Servidor de Desenvolvimento
-python manage.py runserver
+`python manage.py runserver`
 Acesse o projeto no navegador:
 URL padrão: http://127.0.0.1:8000/
 
 ### 8. Notas Importantes
 Ambiente Virtual: Sempre ative o ambiente virtual antes de rodar comandos relacionados ao projeto.
 Painel Administrativo: Acesse http://127.0.0.1:8000/admin/ e faça login com o superusuário.
+
+### Explicação dos Principais Pontos da Estrutura de Diretórios e Arquivos do Projeto
+
+- **blog_main/**: Contém as configurações principais do projeto Django, como `settings.py` para configurações globais, `urls.py` para o roteamento de URLs, e `views.py` para a lógica de exibição das páginas principais.
+
+- **blogs/**: Diretório que representa um aplicativo Django específico, onde a lógica de negócios do blog é definida. Inclui:
+  - **admin.py**: Configura o painel administrativo para gerenciar o conteúdo do blog.
+  - **apps.py**: Configurações do aplicativo `blogs`.
+  - **models.py**: Define a estrutura dos dados (modelos) armazenados no banco de dados, como Posts, Categorias, e Comentários.
+  - **views.py**: Contém a lógica para renderizar as páginas do blog e gerenciar as ações dos usuários.
+  - **migrations/**: Pasta que armazena scripts de migração do banco de dados, necessários para aplicar mudanças no modelo.
+
+- **media/uploads/**: Diretório usado para armazenar arquivos de mídia carregados, como imagens de posts. Subdiretórios são organizados por ano e mês.
+
+- **templates/**: Contém os arquivos HTML do projeto, com diferentes templates para cada página, como a página inicial (`home.html`), a página de blogs (`blogs.html`), e formulários de autenticação como `login.html` e `register.html`.
+
+- **db.sqlite3**: O banco de dados SQLite usado para desenvolvimento e testes. Contém todos os dados persistentes, como posts de blogs, usuários, e comentários.
+
+- **manage.py**: Utilitário do Django para executar várias tarefas administrativas, como rodar o servidor de desenvolvimento, fazer migrações, e criar superusuários.
+
+- **requirements.txt**: Lista as bibliotecas e suas versões específicas que precisam ser instaladas para o projeto funcionar corretamente.
