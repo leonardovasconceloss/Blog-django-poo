@@ -14,7 +14,10 @@ O objetivo do projeto é fornecer uma plataforma de publicação de notícias si
 A seguir, estão algumas capturas de tela do blog:
 
 1. **Página Principal** - Mostra artigos em destaque e uma lista de posts recentes em diferentes categorias.
+   
 2. **Tela de Login** - Interface simples para autenticação de usuários.
+
 3. **Sistema de Comentários** - Permite que os usuários autenticados comentem nas publicações.
+  
 4. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
 
