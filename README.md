@@ -37,6 +37,29 @@ Para executar o projeto, você precisará das seguintes versões e bibliotecas:
 
 ---
 
+### Explicação dos Principais Pontos da Estrutura de Diretórios e Arquivos do Projeto
+
+- **blog_main/**: Contém as configurações principais do projeto Django, como `settings.py` para configurações globais, `urls.py` para o roteamento de URLs, e `views.py` para a lógica de exibição das páginas principais.
+
+- **blogs/**: Diretório que representa um aplicativo Django específico, onde a lógica de negócios do blog é definida. Inclui:
+  - **admin.py**: Configura o painel administrativo para gerenciar o conteúdo do blog.
+  - **apps.py**: Configurações do aplicativo `blogs`.
+  - **models.py**: Define a estrutura dos dados (modelos) armazenados no banco de dados, como Posts, Categorias, e Comentários.
+  - **views.py**: Contém a lógica para renderizar as páginas do blog e gerenciar as ações dos usuários.
+  - **migrations/**: Pasta que armazena scripts de migração do banco de dados, necessários para aplicar mudanças no modelo.
+
+- **media/uploads/**: Diretório usado para armazenar arquivos de mídia carregados, como imagens de posts. Subdiretórios são organizados por ano e mês.
+
+- **templates/**: Contém os arquivos HTML do projeto, com diferentes templates para cada página, como a página inicial (`home.html`), a página de blogs (`blogs.html`), e formulários de autenticação como `login.html` e `register.html`.
+
+- **db.sqlite3**: O banco de dados SQLite usado para desenvolvimento e testes. Contém todos os dados persistentes, como posts de blogs, usuários, e comentários.
+
+- **manage.py**: Utilitário do Django para executar várias tarefas administrativas, como rodar o servidor de desenvolvimento, fazer migrações, e criar superusuários.
+
+- **requirements.txt**: Lista as bibliotecas e suas versões específicas que precisam ser instaladas para o projeto funcionar corretamente.
+
+---
+
 ## Instalação e Configuração
 
 ### Pré-requisitos
@@ -96,23 +119,6 @@ URL padrão: http://127.0.0.1:8000/
 Ambiente Virtual: Sempre ative o ambiente virtual antes de rodar comandos relacionados ao projeto.
 Painel Administrativo: Acesse http://127.0.0.1:8000/admin/ e faça login com o superusuário.
 
-### Explicação dos Principais Pontos da Estrutura de Diretórios e Arquivos do Projeto
+---
 
-- **blog_main/**: Contém as configurações principais do projeto Django, como `settings.py` para configurações globais, `urls.py` para o roteamento de URLs, e `views.py` para a lógica de exibição das páginas principais.
 
-- **blogs/**: Diretório que representa um aplicativo Django específico, onde a lógica de negócios do blog é definida. Inclui:
-  - **admin.py**: Configura o painel administrativo para gerenciar o conteúdo do blog.
-  - **apps.py**: Configurações do aplicativo `blogs`.
-  - **models.py**: Define a estrutura dos dados (modelos) armazenados no banco de dados, como Posts, Categorias, e Comentários.
-  - **views.py**: Contém a lógica para renderizar as páginas do blog e gerenciar as ações dos usuários.
-  - **migrations/**: Pasta que armazena scripts de migração do banco de dados, necessários para aplicar mudanças no modelo.
-
-- **media/uploads/**: Diretório usado para armazenar arquivos de mídia carregados, como imagens de posts. Subdiretórios são organizados por ano e mês.
-
-- **templates/**: Contém os arquivos HTML do projeto, com diferentes templates para cada página, como a página inicial (`home.html`), a página de blogs (`blogs.html`), e formulários de autenticação como `login.html` e `register.html`.
-
-- **db.sqlite3**: O banco de dados SQLite usado para desenvolvimento e testes. Contém todos os dados persistentes, como posts de blogs, usuários, e comentários.
-
-- **manage.py**: Utilitário do Django para executar várias tarefas administrativas, como rodar o servidor de desenvolvimento, fazer migrações, e criar superusuários.
-
-- **requirements.txt**: Lista as bibliotecas e suas versões específicas que precisam ser instaladas para o projeto funcionar corretamente.
