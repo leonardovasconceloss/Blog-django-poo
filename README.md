@@ -1,7 +1,7 @@
-# Futuro em Pauta
+# Bit by Bit Blog
 
 ## Descrição do Projeto
-O **Futuro em Pauta** é um projeto de blog desenvolvido em Python utilizando o framework Django. O blog permite que usuários visualizem notícias em diferentes categorias, comentem em publicações e interajam com os conteúdos. Ele também conta com um sistema de autenticação para gerenciar login de usuários, além de um painel administrativo que permite a criação, atualização, e exclusão de posts.
+O **Bit by Bit Blog** é um projeto de blog desenvolvido em Python utilizando o framework Django. O blog permite que usuários visualizem notícias em diferentes categorias, comentem em publicações e interajam com os conteúdos. Ele também conta com um sistema de autenticação para gerenciar login de usuários, além de um painel administrativo que permite a criação, atualização, e exclusão de posts.
 
 ## Visão Geral
 O objetivo do projeto é fornecer uma plataforma de publicação de notícias simples e eficiente, destacando-se pelas funcionalidades administrativas do Django, como a gestão de posts e usuários. A interface apresenta um design limpo e direto, permitindo que os usuários naveguem facilmente pelos conteúdos.
@@ -21,3 +21,77 @@ A seguir, estão algumas capturas de tela do blog:
   
 4. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
 
+## Requisitos do Sistema
+Para executar o projeto, você precisará das seguintes versões e bibliotecas:
+
+- **Python**: 3.12.3
+- **Django**: 5.1.2
+- **Bibliotecas Adicionais**:
+  - `asgiref==3.8.1`
+  - `backports.zoneinfo==0.2.1` (apenas se a versão do Python for inferior a 3.9)
+  - `crispy-bootstrap4==2024.10`
+  - `django-crispy-forms==2.3`
+  - `pillow==11.0.0`
+  - `sqlparse==0.5.1`
+  - `tzdata==2024.2`
+
+---
+
+## Instalação e Configuração
+
+### Pré-requisitos
+- **Python 3.7 ou superior** instalado.
+- **pip** (gerenciador de pacotes do Python) instalado.
+- **Git** instalado para clonar o repositório.
+
+### 1. Clonar o Repositório
+Abra o terminal (ou Prompt de Comando no Windows) e execute:
+
+git clone git@github.com:SEU_USUARIO/NOME_DO_REPOSITORIO.git
+Substitua SEU_USUARIO e NOME_DO_REPOSITORIO pela URL correta do seu repositório no GitHub.
+
+### 2. Navegar até o Diretório do Projeto
+
+cd NOME_DO_REPOSITORIO
+
+### 3. Criar e Ativar um Ambiente Virtual
+
+No Windows:
+
+Criar o ambiente virtual:
+python -m venv env
+Ativar o ambiente virtual:
+env\Scripts\activate
+
+No Linux:
+Criar o ambiente virtual:
+
+python3 -m venv env
+Ativar o ambiente virtual:
+
+source env/bin/activate
+
+### 4. Instalar as Dependências
+Com o ambiente virtual ativo, execute:
+
+pip install -r requirements.txt
+
+### 5. Configurar o Banco de Dados
+Execute as migrações para configurar o banco de dados:
+
+python manage.py migrate
+
+### 6. Criar um Superusuário (Opcional, mas recomendado)
+Para acessar o painel administrativo do Django, crie um superusuário:
+
+python manage.py createsuperuser
+Siga as instruções para definir um nome de usuário, e-mail e senha.
+
+### 7. Rodar o Servidor de Desenvolvimento
+python manage.py runserver
+Acesse o projeto no navegador:
+URL padrão: http://127.0.0.1:8000/
+
+### 8. Notas Importantes
+Ambiente Virtual: Sempre ative o ambiente virtual antes de rodar comandos relacionados ao projeto.
+Painel Administrativo: Acesse http://127.0.0.1:8000/admin/ e faça login com o superusuário.
