@@ -1,7 +1,7 @@
 # Bit by Bit Blog
 
 ## Descrição do Projeto
-O **Bit by Bit Blog** é um projeto de blog desenvolvido em Python utilizando o framework Django. O blog permite que usuários visualizem notícias em diferentes categorias, comentem em publicações e interajam com os conteúdos. Ele também conta com um sistema de autenticação para gerenciar login de usuários, além de um painel administrativo que permite a criação, atualização, e exclusão de posts.
+O **Bit by Bit Blog** é um projeto desenvolvido em Python utilizando o framework Django. O blog permite que usuários visualizem notícias em diferentes categorias, comentem em publicações e interajam com os conteúdos. Ele também conta com um sistema de autenticação para gerenciar login de usuários, além de um painel administrativo que permite a criação, atualização, e exclusão de posts pelo usuário administrador.
 
 ## Visão Geral
 O objetivo do projeto é fornecer uma plataforma de publicação de notícias simples e eficiente, destacando-se pelas funcionalidades administrativas do Django, como a gestão de posts e usuários. A interface apresenta um design limpo e direto, permitindo que os usuários naveguem facilmente pelos conteúdos.
