@@ -20,6 +20,8 @@ A seguir, estão algumas capturas de tela do blog:
 3. **Sistema de Comentários** - Permite que os usuários autenticados comentem nas publicações.
   
 4. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
+![Imagem da Web](https://ibb.co/5YxvXfp)
+
 
 ## Requisitos do Sistema
 Para executar o projeto, você precisará das seguintes versões e bibliotecas:
