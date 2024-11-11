@@ -32,13 +32,20 @@ Para executar o projeto, você precisará das seguintes versões e bibliotecas:
 - **Python**: 3.12.3
 - **Django**: 5.1.2
 - **Bibliotecas Adicionais**:
-  - `asgiref==3.8.1`
-  - `backports.zoneinfo==0.2.1` (apenas se a versão do Python for inferior a 3.9)
-  - `crispy-bootstrap4==2024.10`
-  - `django-crispy-forms==2.3`
-  - `pillow==11.0.0`
-  - `sqlparse==0.5.1`
-  - `tzdata==2024.2`
+  - `asgiref==3.8.1` : Fornece suporte para funcionalidades assíncronas no Django, essenciais para rodar servidores e aplicações modernas com capacidade de lidar com conexões simultâneas.
+
+  - `backports.zoneinfo==0.2.1` : Garante suporte a fusos horários se estiver usando Python abaixo da versão 3.9, necessário para o correto gerenciamento de horários no projeto.
+
+  - `crispy-bootstrap4==2024.10` : Simplifica o estilo e a formatação de formulários Django usando o Bootstrap 4, melhorando a aparência e a responsividade sem esforço manual.
+
+  - `django-crispy-forms==2.3` : Facilita a renderização de formulários customizados e bem organizados no Django, tornando a criação de interfaces de usuário mais intuitiva.
+
+  - `pillow==11.0.0` : Permite trabalhar com imagens (redimensionar, salvar, e converter formatos) no projeto, útil para funcionalidades que envolvem upload e manipulação de imagens.
+
+  - `sqlparse==0.5.1` : Utilizado para formatar e analisar consultas SQL, garantindo que o Django gerencie e exiba as consultas de forma eficiente e compreensível.
+
+  - `tzdata==2024.2` : Fornece atualizações de fusos horários globais, essencial para garantir que datas e horários estejam corretos em diferentes regiões.
+
 
 ---
 
