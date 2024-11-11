@@ -16,10 +16,12 @@ A seguir, estão algumas capturas de tela do blog:
 1. **Página Principal** - Mostra artigos em destaque e uma lista de posts recentes em diferentes categorias.
    
 2. **Tela de Login** - Interface simples para autenticação de usuários.
+![Imagem da Web](https://drive.google.com/uc?export=view&id=11XZqrmNVC6wU03cKIqD8XXEHn2faYQ9S)
 
-3. **Sistema de Comentários** - Permite que os usuários autenticados comentem nas publicações.
+4. **Sistema de Comentários** - Permite que os usuários autenticados comentem nas publicações.
+![Imagem da Web](https://drive.google.com/uc?export=view&id=17PtdSGUcMXSvx8T7-5iGPN97AimpI-Sp)
   
-4. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
+6. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
 ![Imagem da Web](https://drive.google.com/uc?export=view&id=1-Y9sPCV6TvuP2snUJHfLm6hCo-py5ec2)
 
 
