@@ -20,7 +20,8 @@ A seguir, estão algumas capturas de tela do blog:
 3. **Sistema de Comentários** - Permite que os usuários autenticados comentem nas publicações.
   
 4. **Painel Administrativo** - Controle completo de posts, categorias, comentários e gerenciamento de usuários.
-![Imagem da Web](https://exemplo.com/imagem.png)
+![Imagem da Web](https://drive.google.com/uc?export=view&id=1-Y9sPCV6TvuP2snUJHfLm6hCo-py5ec2)
+
 
 
 ## Requisitos do Sistema
